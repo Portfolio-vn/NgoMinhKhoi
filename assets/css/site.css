@@ -130,6 +130,19 @@ main{padding:44px 0 12px}
 }
 .gallery img:hover{transform:scale(1.03)}
 
+/* volunteer trip */
+.trip-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:4px 12px;margin-bottom:8px}
+.trip-head b{font-size:1rem;color:var(--acc)}
+.wide{display:block;margin-top:16px}
+.wide img{display:block;width:100%;border-radius:12px;border:1px solid var(--border)}
+.day{margin:26px 0 0;font-size:.95rem;display:flex;align-items:center;gap:10px}
+.day span{font-size:.68rem;text-transform:uppercase;letter-spacing:.05em;padding:3px 9px;border-radius:999px;background:rgba(242,184,75,.15);color:var(--acc2)}
+.gallery.tall{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+.gallery figure{margin:0}
+.gallery figure a{display:block;overflow:hidden;border-radius:10px}
+.gallery.tall img{aspect-ratio:3/4;display:block}
+.gallery figcaption{font-size:.78rem;color:var(--muted);margin-top:6px;line-height:1.4}
+
 footer{padding:24px 0 56px;text-align:center}
 
 @media (max-width:640px){
