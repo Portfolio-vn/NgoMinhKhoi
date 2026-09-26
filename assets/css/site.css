@@ -129,6 +129,18 @@ html[lang="en"] .lang .l-en, html[lang="vi"] .lang .l-vi{color:var(--green)}
 .role h3{font-family:var(--serif);font-weight:600;font-size:1.22rem;line-height:1.25;margin:10px 0 6px}
 .pos{margin:0;color:var(--green);font-weight:600;font-size:.9rem}
 .desc{margin:10px 0 0;font-size:.88rem;color:var(--muted)}
+.role-link{display:inline-block;margin-top:12px;font-size:.84rem;font-weight:600;color:var(--green);text-decoration:none;border-bottom:1.5px solid var(--green-soft)}
+.role-link:hover{border-color:var(--green)}
+
+/* INOVA 2026 photos */
+.inova-shots{display:grid;grid-template-columns:.75fr 1.25fr;gap:18px;margin-top:28px;align-items:start}
+.inova-shots figure{margin:0}
+.inova-shots a{display:block;border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);background:var(--paper-2)}
+.inova-shots img{width:100%;object-fit:cover;transition:transform .5s}
+.inova-shots .tall img{aspect-ratio:4/5}
+.inova-shots .wide img{aspect-ratio:4/3}
+.inova-shots a:hover img{transform:scale(1.03)}
+.inova-shots figcaption{font-size:.84rem;color:var(--muted);margin-top:8px}
 
 /* ventures */
 .ventures{display:grid;grid-template-columns:1.5fr 1fr;gap:22px}
@@ -161,6 +173,18 @@ html[lang="en"] .lang .l-en, html[lang="vi"] .lang .l-vi{color:var(--green)}
 .grid4 img{width:100%;aspect-ratio:3/4;object-fit:cover;transition:transform .5s}
 .grid4 a:hover img, .strip a:hover img{transform:scale(1.04)}
 .grid4 figcaption{font-size:.84rem;color:var(--muted);margin-top:8px;line-height:1.4}
+.moment{margin-top:26px}
+.day-label + .moment{margin-top:6px}
+.m-title{display:flex;align-items:center;gap:10px;margin:0 0 12px;font-size:.98rem;font-weight:700;letter-spacing:-.005em;color:var(--ink)}
+.m-title::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--green);flex:none}
+.m-title small{font-size:.7rem;font-weight:700;color:var(--muted);background:var(--paper-2);border:1px solid var(--line);border-radius:999px;padding:1px 8px}
+.m-grid{display:grid;grid-template-columns:repeat(var(--n,4),1fr);gap:14px}
+.m-grid figure{margin:0;min-width:0}
+.m-grid a{display:block;border-radius:14px;overflow:hidden;background:var(--alt)}
+.m-grid img{width:100%;aspect-ratio:3/4;object-fit:cover;transition:transform .5s}
+.m-grid[style*="--n:3"] img{aspect-ratio:4/4}
+.m-grid a:hover img{transform:scale(1.04)}
+.m-grid figcaption{font-size:.82rem;color:var(--muted);margin-top:7px;line-height:1.4}
 .strip{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
 .strip a{display:block;border-radius:12px;overflow:hidden}
 .strip img{width:100%;aspect-ratio:1/1;object-fit:cover;transition:transform .5s}
@@ -232,6 +256,10 @@ html[lang="en"] .lang .l-en, html[lang="vi"] .lang .l-vi{color:var(--green)}
   .roles .role, .roles .role:nth-child(4), .roles .role:nth-child(5){grid-column:auto}
   .roles .role:nth-child(5){grid-column:1/-1}
   .grid4{grid-template-columns:repeat(2,1fr)}
+  .m-grid{grid-template-columns:repeat(2,1fr)}
+  .m-grid[style*="--n:3"] figure:last-child{grid-column:1/-1}
+  .m-grid[style*="--n:3"] figure:last-child img{aspect-ratio:16/10}
+  .inova-shots{grid-template-columns:1fr 1fr}
   .strip{grid-template-columns:repeat(3,1fr)}
   .section{padding:64px 0}
 }
@@ -241,7 +269,8 @@ html[lang="en"] .lang .l-en, html[lang="vi"] .lang .l-vi{color:var(--green)}
   .lede, .big{font-size:1.05rem}
   .project-main, .venture, .paper{padding:24px}
   .hero-shot img{aspect-ratio:4/3}
-  .grid4{gap:12px}
+  .grid4, .m-grid{gap:10px}
+  .inova-shots{grid-template-columns:1fr}
   .courses{grid-template-columns:1fr}
   .roles{grid-template-columns:1fr}
   .to-top{margin-left:0}
