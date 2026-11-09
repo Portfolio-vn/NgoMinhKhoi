@@ -203,6 +203,7 @@ html[lang="en"] .lang .l-en, html[lang="vi"] .lang .l-vi{color:var(--green)}
 .course{background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:18px 18px 20px;display:flex;flex-direction:column;gap:6px;border-top:3px solid var(--green)}
 .course .org{font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 .course b{font-size:.98rem;line-height:1.35}
+.course .role-link{align-self:flex-start;margin-top:auto;padding-top:8px}
 
 /* research */
 .paper{background:var(--paper-2);border:1px solid var(--line);border-radius:var(--r);padding:36px 40px;position:relative;overflow:hidden;box-shadow:var(--shadow)}
